@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sparkapp-container
-        image: psshri/spark-argocd:appv2.0
+        image: psshri/spark-argocd:appv3.0
         ports: 
         - containerPort: 8080
