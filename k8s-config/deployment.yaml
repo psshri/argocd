@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: sparkapp
 spec: 
   selector:
     matchLabels:
-      app: myapp
+      app: sparkapp
   replicas: 3
   template: 
     metadata:
       labels:
-        app: myapp
+        app: sparkapp
     spec:
       containers:
-      - name: myapp
+      - name: sparkapp-container
         image: psshri/spark-argocd:appv2.0
         ports: 
         - containerPort: 8080
